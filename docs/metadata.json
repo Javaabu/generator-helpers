@@ -1,5 +1,5 @@
 {
-    "name": "{Your Package}",
-    "description": "{package description}",
+    "name": "Generator Helpers",
+    "description": "Helper methods for Laravel generators",
     "version": "1"
 }

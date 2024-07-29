@@ -1,17 +1,17 @@
 {
-    "name": "javaabu/{your-package}",
-    "description": "{package description}",
-    "homepage": "https://github.com/Javaabu/{your-package}",
+    "name": "javaabu/generator-helpers",
+    "description": "Helper methods for Laravel generators",
+    "homepage": "https://github.com/Javaabu/generator-helpers",
     "license": "MIT",
     "keywords": [
         "javaabu",
         "laravel",
-        "{your_package}"
+        "generator_helpers"
     ],
     "authors": [
         {
-            "name": "{author_name}",
-            "email": "{author_email}",
+            "name": "Arushad Ahmed",
+            "email": "arushad@javaabu.com",
             "role": "Developer"
         }
     ],
@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Javaabu\\{YourPackage}\\": "src/"
+            "Javaabu\\GeneratorHelpers\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Javaabu\\{YourPackage}\\Tests\\": "tests/"
+            "Javaabu\\GeneratorHelpers\\Tests\\": "tests/"
         }
     },
     "extra": {
@@ -40,7 +40,7 @@
         },
         "laravel": {
             "providers": [
-                "Javaabu\\{YourPackage}\\{YourPackage}ServiceProvider"
+                "Javaabu\\GeneratorHelpers\\GeneratorHelpersServiceProvider"
             ]
         }
     },

@@ -1,8 +1,8 @@
 <?php
 
-namespace Javaabu\{YourPackage}\Tests\Feature;
+namespace Javaabu\GeneratorHelpers\Tests\Feature;
 
-use Javaabu\{YourPackage}\Tests\TestCase;
+use Javaabu\GeneratorHelpers\Tests\TestCase;
 
 class ExampleTest extends TestCase
 {

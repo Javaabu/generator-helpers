@@ -1,19 +1,16 @@
 <?php
 
-namespace Javaabu\GeneratorHelpers\Tests\TestSupport\Providers;
+namespace Javaabu\GeneratorHelpers;
 
 use Illuminate\Support\ServiceProvider;
 
-class TestServiceProvider extends ServiceProvider
+class GeneratorHelpersServiceProvider extends ServiceProvider
 {
     /**
      * Bootstrap the application services.
      */
     public function boot()
     {
-        $this->loadMigrationsFrom([
-            __DIR__ . '/../database',
-        ]);
     }
 
     /**
@@ -21,6 +18,5 @@ class TestServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
     }
 }
