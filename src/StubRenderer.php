@@ -51,7 +51,7 @@ class StubRenderer
         $package = Str::before($stub, '::');
         $stub_name = trim(Str::after($stub, '::'), '/');
 
-        $custom_path = base_path('stubs/' . $package . '/' . $stub_name);
+        $custom_path = base_path('stubs/vendor/' . $package . '/' . $stub_name);
 
         return file_exists($custom_path) ? $custom_path : $this->defaultStubPath($package) . '/' . $stub_name;
     }
