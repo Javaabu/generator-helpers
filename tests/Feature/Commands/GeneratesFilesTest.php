@@ -22,8 +22,7 @@ class GeneratesFilesTest extends TestCase
         parent::tearDown();
     }
 
-    /** @test */
-    public function it_can_generate_a_new_file(): void
+    public function test_it_can_generate_a_new_file(): void
     {
         $expected_path = $this->app->databasePath('factories/CategoryFactory.php');
         $expected_content = $this->getTestStubContents('factories/CategoryFactory.php');
@@ -37,8 +36,7 @@ class GeneratesFilesTest extends TestCase
         $this->assertEquals($expected_content, $actual_content);
     }
 
-    /** @test */
-    public function it_does_not_create_existing_files_without_the_force_option(): void
+    public function test_it_does_not_create_existing_files_without_the_force_option(): void
     {
         $expected_path = $this->app->databasePath('factories/CategoryFactory.php');
 
@@ -56,8 +54,7 @@ class GeneratesFilesTest extends TestCase
             ->expectsOutput($expected_path . ' already exists!');
     }
 
-    /** @test */
-    public function it_over_writes_existing_files_with_the_force_option(): void
+    public function test_it_over_writes_existing_files_with_the_force_option(): void
     {
         $this->partialMock(Filesystem::class, function (MockInterface $mock) {
             $mock->shouldReceive('exists')
